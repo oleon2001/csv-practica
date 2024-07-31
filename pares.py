@@ -30,4 +30,3 @@ def controlDeflujo(numero):
 
 print(controlDeflujo(lista_numeros2))
 
-    
