@@ -28,5 +28,5 @@ if __name__ == '__main__':
     labels = ['a','b','c']
     values = [10,40,800]
     #generateBarChart(labels,values)
-    generatePieChart(labels,values)
-    generateBarChart(labels=labels, values=values)
+    ch.generatePieChart(labels,values)
+    ch.generateBarChart(labels=labels, values=values)
