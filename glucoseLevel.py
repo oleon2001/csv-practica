@@ -4,6 +4,7 @@ import charts
 def readCsv(path):
     with open(path,'r') as csvFile:
         reader = csv.reader(csvFile,delimiter=',')
+        print(reader)
         header = next(reader)
         print(header)
         data = []
@@ -12,6 +13,8 @@ def readCsv(path):
             iterable = zip(header,row)
             pacientDict = {key:value for key,value in iterable}
             data.append(pacientDict)
+            
+        print(data)
         
 
     return data

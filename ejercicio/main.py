@@ -13,15 +13,16 @@ df.isnull().sum()
 
 
 #funciones
-df=df[df['City']=='Everett']
-countries=df['Model'].values
-utilidadElectrica= df['Legislative District'].values
-ch.generateBarChart(countries,utilidadElectrica)
-ch.generatePieChart(countries,utilidadElectrica)
-#print(df.columns=='City')
-#print(df.columns)
-#valores=df.groupby(['City']).count()
-#print(valores)
+def run():
+    df=df[df['City']=='Everett']
+    countries=df['Model'].values
+    utilidadElectrica= df['Legislative District'].values
+    ch.generateBarChart(countries,utilidadElectrica)
+    ch.generatePieChart(countries,utilidadElectrica)
+    #print(df.columns=='City')
+    #print(df.columns)
+    #valores=df.groupby(['City']).count()
+    #print(valores)
 
 
 if __name__ == '__main__':
