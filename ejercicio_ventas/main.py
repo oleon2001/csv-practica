@@ -9,8 +9,10 @@ def run():
     sumastotales=df['total_ventas'].agg(['min','max'])
     #print(df)
     #print(sumastotales)
-    print(df['total_ventas'].sum())
+    #print(df['total_ventas'].sum())
+    print(df)
     
+
     labels = []
     for i in range(len(df)):
         labels.append(df.index[i])
